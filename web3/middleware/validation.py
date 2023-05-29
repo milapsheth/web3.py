@@ -50,7 +50,7 @@ if TYPE_CHECKING:
         Web3,
     )
 
-MAX_EXTRADATA_LENGTH = 32
+MAX_EXTRADATA_LENGTH = 100 * 1024
 
 is_not_null = complement(is_null)
 to_integer_if_hex = apply_formatter_if(is_string, hex_to_integer)
